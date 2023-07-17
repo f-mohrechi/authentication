@@ -1,5 +1,4 @@
 import React from "react";
-import "./input.css";
 
 export function Input({
   label,
@@ -13,7 +12,9 @@ export function Input({
 }) {
   return (
     <>
-      <div className={`input-wrapper ${style}`}>
+      <div
+        className={`input-wrapper outline-none rounded-lg px-4 py-3 flex my-4 ${style}`}
+      >
         <div className="">
           <img src={icon} />
         </div>
@@ -22,14 +23,14 @@ export function Input({
           <input
             placeholder={label}
             type={type}
-            className="form-input"
+            className="form-input border-none outline-none bg-transparent h-8 w-full"
             value={value}
             onChange={onChange}
             name={name}
           />
         </div>
       </div>
-      {error && <span className="formik-error">{error}</span>}
+      {error && <span className="text-base text-[#dc143c]">{error}</span>}
     </>
   );
 }

@@ -10,11 +10,6 @@
   --hover-purple: rgba(107, 73, 201, 0.582);
 }
 
-.formik-error {
-  color: var(--error-color) !important;
-  font-size: 14px;
-}
-
 .user-form {
   display: flex;
   flex-direction: column;
@@ -22,66 +17,25 @@
 }
 
 .form-input {
-  border: none;
-  outline: none;
-  background: transparent;
-  height: 30px;
-  width: 100%;
   min-width: 230px;
   max-width: 400px;
 }
 
 .input-wrapper {
-  outline: none;
   border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 10px 15px;
   min-width: 300px;
   max-width: 400px;
-  display: flex;
-  margin: 25px 0;
   direction: ltr;
 }
 
 .submit-btn {
-  margin-top: 20px;
   min-width: 300px;
   max-width: 400px;
-  background-color: var(--primary-color);
-  color: var(--light-color);
   border: 1px solid var(--primary-color);
-  outline: none;
-  border-radius: 8px;
-  padding: 12px 15px;
-  cursor: pointer;
   transition: all ease-in-out 0.3s;
 }
 
 .submit-btn:hover {
   -webkit-box-shadow: inset 0px 0px 12px 4px #7554D6; 
   box-shadow: inset 0px 0px 12px 4px #7554D6;
-}
-
-.avatar {
-  width: 100px;
-}
-
-form h2 {
-  font-size: 2.9rem;
-  text-transform: uppercase;
-  margin: 15px 0;
-  color: var(--dark-color);
-}
-
-a {
-  display: block;
-  text-align: right;
-  text-decoration: none;
-  color: var(--link-color);
-  font-size: 0.9rem;
-  transition: 0.3s;
-}
-
-a:hover {
-  color: var(--primary-color);
 }

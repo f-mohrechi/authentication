@@ -1,47 +1,25 @@
 import React from "react";
-import "./auth.css";
 
 export default function Login({ children, image, isltr, title }) {
   return (
     <>
       <div
-        className="container"
+        className="container mx-auto mt-12 h-[90vh] rounded-2xl"
         style={{
-          marginTop: "50px",
-          height: "90vh",
           background: "rgb(	132, 94, 241, 0.2)",
-          borderRadius: "15px",
           direction: isltr ? "ltr" : "rtl",
         }}
       >
-        <div
-          className="row m-0"
-          style={{ display: "flex", alignItems: "center", height: "87vh" }}
-        >
-          <div className={`col-12 col-md-6 `}>
-            <div
-              className="w-100 h-100"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
+        <div className="grid grid-cols-2" style={{ height: "87vh" }}>
+          <div>
+            <div className="w-full h-full flex items-center justify-center">
               <img src={image} />
             </div>
           </div>
 
           <div
             title={title}
-            className="col-12 col-md-6 my-3"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              background: "#f7f7f7",
-              borderRadius: "10px",
-              height: "100%",
-            }}
+            className="m-3 flex justify-center items-center bg-[#f7f7f7] rounded-lg h-full"
           >
             {children}
           </div>

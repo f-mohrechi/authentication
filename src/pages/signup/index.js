@@ -47,9 +47,9 @@ export const Signup = () => {
 
   return (
     <AuthLayout isltr={false} image={"./img/Tablet login-amico.svg"}>
-      <form className="user-form" onSubmit={handleSubmit}>
-        <img className="avatar" src="./img/undraw_female_avatar_w3jk.svg" />
-        <h2>SignUp</h2>
+      <form className="flex flex-col items-center" onSubmit={handleSubmit}>
+        <img className="w-24" src="./img/undraw_female_avatar_w3jk.svg" />
+        <h2 className="text-5xl font-semibold my-4 text-[#333]">SignUp</h2>
 
         <Input
           label={"Username"}

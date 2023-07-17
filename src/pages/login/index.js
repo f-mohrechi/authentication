@@ -61,9 +61,14 @@ export default function Login() {
       image="./img/Tablet login-pana.svg"
     >
       <div>
-        <form className="user-form" onSubmit={handleSubmit}>
-          <img className="avatar" src="./img/undraw_female_avatar_w3jk.svg" />
-          <h2 title="Welcome">Welcome</h2>
+        <form className="flex flex-col items-center" onSubmit={handleSubmit}>
+          <img className="w-24" src="./img/undraw_female_avatar_w3jk.svg" />
+          <h2
+            className="text-5xl font-semibold my-4 text-[#333]"
+            title="Welcome"
+          >
+            Welcome
+          </h2>
 
           <Input
             label={"Username"}
@@ -87,7 +92,6 @@ export default function Login() {
             onChange={handleChange("password")}
           />
 
-          <a href="#">Forgot Password?</a>
           <Button onClick={handleCallApi} type="submit" label="Login" />
         </form>
       </div>
