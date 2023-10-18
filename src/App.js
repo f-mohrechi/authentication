@@ -10,7 +10,7 @@ const queryClient = new QueryClient();
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
+      <BrowserRouter basename="/authentication">
         <Routes>
           <Route element={<Signup />} path="/" />
           <Route element={<Login />} path="/login" />
